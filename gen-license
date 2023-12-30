@@ -17,6 +17,7 @@ jq -r '[.[] | select(.key) | .name]' "${CACHE_DIR}/licenses.json" | sed 's/\\//g
 
 NAME=$(grep '' "${CACHE_DIR}/LICENSE_NAMES" | fzf --prompt "> Choose a license: " --height 40% --reverse)
 [ -z "${NAME}" ] && exit
+echo -e "Choose a license: ${NAME}"
 
 N=$(grep -n "${NAME}" "${CACHE_DIR}/LICENSE_NAMES" | cut -d ":" -f1)
 
@@ -28,8 +29,6 @@ if command -v curl >/dev/null 2>&1; then
 else
   wget -r "${LICENSE_URL}" --tries=5 -O "${CACHE_DIR}/${LICENSE_NAME}.json"
 fi
-
-echo -e "Choose a license: ${NAME}"
 
 echo -n "Enter your name: "
 read FN
