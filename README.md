@@ -10,7 +10,7 @@
 Generate license for your next open source projects right from the comfort of your terminal. The licenses are generated using GitHub's API so you can be assured these licenses are legit!
 
 ## Dependencies  
-- <samp>curl</samp> &nbsp;or &nbsp; <samp>wget</samp>
+- <samp>curl</samp> &nbsp;or &nbsp; <samp>wget</samp> &nbsp;or &nbsp; <samp>aria2</samp>
 - <samp>fzf</samp>
 - <samp>sed</samp>
 - <samp>jq</samp>
