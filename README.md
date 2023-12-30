@@ -3,7 +3,7 @@
 # 📃 License Generator
 *A POSIX compliant shell script that generates license for your open source projects*
 
-![gen-license-preview](https://github.com/SamIsTheFBI/pokeindex/assets/70562711/c2c9604c-987b-4bd0-8d79-6dd60ad08be2)
+![gen-license-preview](https://github.com/SamIsTheFBI/license-generator/assets/70562711/6a1b5d1f-5714-4057-99b9-0fdedd1334c7)
 
 </div>
 
