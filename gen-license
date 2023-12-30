@@ -4,8 +4,8 @@ github_license_api="https://api.github.com/licenses"
 cache_dir="${XDG_CACHE_HOME:-${HOME}/.cache}/license-generator"
 
 downloadFile() {
-  local url="${1}"
-  local dest="${2}"
+  url="${1}"
+  dest="${2}"
 
   if command -v curl >/dev/null 2>&1; then
     curl -sS -L "${url}" --compressed > "${dest}" \
@@ -22,7 +22,7 @@ downloadFile() {
   fi
 }
 
-[ $(command -v fzf) ] \
+[ "$(command -v fzf)" ] \
   || { printf "%s" "Error: fzf is required for this script. Install it first."; exit 1; }
 
 mkdir -p "${cache_dir}"
